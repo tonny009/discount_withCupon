@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Discount Page</title>
+</head>
+
+<body>
+    <header>
+        <div class="bg-slate-700 p-8">
+            <h2 class="text-white text-center text-4xl">Get Offer with your Cupon!</h2>
+
+        </div>
+    </header>
+    <main>
+        <section class="bg-violet-300 pt-12 pb-14">
+            <div class="grid grid-cols-2  w-8/12 mx-auto">
+                <!-- input section ---------- -->
+                <div class="bg-slate-300 p-12">
+                    <h2 class="text-3xl font-medium mt-20">Actual Produt Price($) : <span
+                            id="actual_price_display">00</span> </h2>
+                    <div class="mt-20 mb-20">
+                        <input id="price" class="w-8/12 block mb-5 p-3 rounded-lg" type="text" name=""
+                            placeholder="Enter your $ price ">
+                        <input id="cupon" class="w-8/12 block mb-12 p-3 rounded-lg" type="text" name=""
+                            placeholder="write 'DOM' (your cupon) ">
+                        <button id="btn-apply"
+                            class="bg-slate-600 hover:bg-sky-700 px-8 py-4 text-white text-xl font-medium rounded">Apply</button>
+                    </div>
+
+                    <h2 class="text-3xl font-medium">Discount Price($) : <span id="discount_price_display">00</span>
+                    </h2>
+
+                </div>
+                <div>
+                    <img src="discount_image.jpg">
+                </div>
+
+        </section>
+
+
+    </main>
+    <script src="utilities.js"></script>
+    <footer class=" bg-slate-600 p-8 text-white text-center text-2xl">
+        <h3>company@yahoo.com</h3>
+
+    </footer>
+
+</body>
+
+</html>
